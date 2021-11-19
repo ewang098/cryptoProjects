@@ -51,7 +51,6 @@ def scheduleSelector(threshold, selector, notificationType, time=1):
     schedule.every(time).hours.do(textLoop, threshold, notificationType)
 
 def main():
-  #create an object
   thresholdAlert, thresholdUpdate  = 1.60, 200.00
   lengthAlert, lengthUpdate = 1, 1
   selector = ['sec', 'min', 'hr']
